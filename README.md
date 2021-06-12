@@ -1,4 +1,7 @@
 https://1wooseok.github.io/NavBar_Prac/
 
-- CSS MediaQuery, Flex
-- JS ClassList
+### CSS
+ - MediaQuery
+ -  Flex
+### JS 
+ - ClassList
