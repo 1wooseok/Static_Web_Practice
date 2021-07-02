@@ -1,0 +1,164 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    color: silver;
+    background-color: rgba(0,0,0,0.8);
+    height: 65px;
+}
+
+.navbar__menu {
+    list-style: none;
+    display: flex;
+}
+
+.navbar__menu li {
+    padding: 0 50px;
+    text-decoration: none;
+}
+
+.navbar__menu li a{
+    padding: 0 12px;
+    text-decoration: none;
+    color: silver;
+    font-size: 20px;
+}
+
+.navbar__menu li a:hover{
+    color: white;
+    transition: 1s;
+}
+
+.apple__logo {
+    padding-left: 185px;
+    line-height: 65px;
+}
+
+.apple__logo i {
+    color: silver;
+}
+
+.apple__logo i:hover {
+    color: white;
+    transition: 1s;
+}
+
+.shopping__logo {
+    padding-right: 100px;
+}
+
+.shopping__logo i {
+    color: silver;
+    
+    line-height: 65px;
+}
+
+.shopping__logo i:hover {
+    color: white;
+    transition: 1s;
+}
+
+.toggle__btn {
+    display: none;
+}
+
+.cancle__btn {
+    display: none;
+}
+
+@media screen and (max-width: 1580px) {
+    .navbar {
+        flex-direction: column;
+    }
+     
+    .navbar__menu {
+        display: none;
+        position: absolute;
+        top: 65px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        max-width: 664px;
+        margin: 0 auto;
+        padding: 45px 40px 8px;
+        height: auto;
+        background-color: black;
+        border-top: 1px solid gray;
+        transition: 1s;
+    }
+
+    .navbar__menu li {
+        padding: 0;
+        border-bottom: 1px solid gray;
+        height: 44px;
+        padding-top: 15px;
+    }
+
+    .navbar__menu li a {
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+    .toggle__btn {
+        display: block;
+        width: 48;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .cancle__btn {
+        display: none;
+        width: 48;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .cancle__btn i {
+        color: silver;
+    }
+
+    .cancle__btn i:hover {
+        color: white;
+    }
+
+
+    .toggle__btn i {
+        color: silver;
+    }
+
+    .toggle__btn i:hover {
+        color: white;
+        transition: 1s;
+    }
+    
+    .apple__logo {
+        position: absolute;
+        width: 48px;
+        top: 0;
+        right: 47%;
+        margin-left: -24px;
+        text-align: center;
+        z-index: 1;
+    }
+    
+    .shopping__logo {
+        padding-right: 0;
+        position: absolute;
+        right: 25px;
+    }
+
+
+    .none {
+        display: none;
+    }
+
+    .block {
+        display: block;
+    }
+}
