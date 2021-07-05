@@ -1,0 +1,112 @@
+:root {
+  /* color */
+  --red-color: #fb0102;
+  --dark_grey-color: #202020;
+  --white-color: #fdfdfd;
+  --blue-color: #3da7fd;
+  --light_grey-color: #707476;
+  --black-color: #000002;
+  --light-purple: #bb1a59;
+  --grey-color: #6e6e6f;
+
+  /* Size */
+  --padding: 12px;
+  --avatar_size: 36px;
+
+  /* Font Size */
+  --font_large: 18px;
+  --font_medium: 14px;
+  --font_small: 12px;
+  --font_micro: 10px;
+}
+
+input[id="chkbox"] {
+  display: none;
+}
+
+input[id="chkbox"] + label {
+  display: block;
+  width: 30px;
+  height: 12px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[id="chkbox"] + label span {
+  display: block;
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  border-radius: 30px;
+  background-color: var(--white-color);
+  transition: all 0.4s;
+}
+
+input[id="chkbox"] + label span:nth-child(1) {
+  top: 0;
+}
+
+input[id="chkbox"] + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+input[id="chkbox"] + label span:nth-child(3) {
+  bottom: 0;
+}
+
+/* checked */
+input[id="chkbox"]:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+input[id="chkbox"]:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+
+input[id="chkbox"]:checked + label span:nth-child(3) {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+/* Button */
+.join_btn {
+  width: 65px;
+  height: 35px;
+  padding: var(--padding);
+  background-color: var(--dark_grey-color);
+  border: 0.5px solid var(--blue-color);
+  border-radius: 3px;
+  color: var(--blue-color);
+  text-align: center;
+  line-height: 11px;
+  font-size: var(--font_medium);
+}
+
+.subscribe_btn {
+  width: 65px;
+  height: 35px;
+  padding: var(--padding);
+  background-color: var(--red-color);
+  border: 0.5px solid var(--red-color);
+  border-radius: 3px;
+  color: var(--white-color);
+  text-align: center;
+  line-height: 11px;
+  font-size: var(--font_medium);
+}
+
+/* Like Button */
+input[id="like_btn"] {
+  display: none;
+}
+
+input[id="like_btn"] + label {
+  cursor: pointer;
+}
+
+/* 왜 안되는지 모르겠음 */
+input[id="like_btn"]:checked + label i {
+  color: var(--blue-color);
+}
