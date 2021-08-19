@@ -1,8 +1,12 @@
-# Navigation Bar Practice
+# Static Web Practice
 https://1wooseok.github.io/Static_Web_Practice/
 
 ### CSS
  - MediaQuery
- -  Flex
+ - Flex
+ - adjacent-elements
+ - Transform
+ 
+
 ### JS 
  - ClassList
