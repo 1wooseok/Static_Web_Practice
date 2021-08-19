@@ -3,7 +3,7 @@ https://1wooseok.github.io/Static_Web_Practice/
 
 ### CSS
  - MediaQuery
- - var Function
+ - var() Function
  - adjacent-elements
  - Transform
  - Flex
